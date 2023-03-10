@@ -26,7 +26,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void dropUsersTable() {
         try (Statement statement = connection.createStatement()) {
-            statement.executeUpdate("DROP TABLE user");
+            statement.executeUpdate("DROP TABLE IF EXISTS user");
             System.out.println("Таблица удалена");
         } catch (SQLException e) {
             System.out.println("Не удалось удалить таблицу");
