@@ -20,6 +20,8 @@ public class UserDaoJDBCImpl implements UserDao {
             System.out.println("Таблица создана");
         } catch (SQLException e) {
             System.out.println("Не удалось создать таблицу");
+
+
         }
 
     }
